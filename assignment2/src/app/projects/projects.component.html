@@ -1,1 +1,13 @@
-<p>projects works!</p>
+<p>project works!</p>
+
+<mat-list>
+    <mat-list-item *ngFor="let x of projects">
+      <h4 matListItemTitle [style.font-weight]="'bold'">{{ x.Name }}</h4>
+      <p matListItemLine>{{ x.Description }}</p>
+      <p matListItemLine>{{ x.Technologies }}</p>
+      <p matListItemLine>{{ x.Duration }}</p>
+    </mat-list-item>
+  </mat-list>
+
+
+

@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Projects } from '../interfacePersonalInfo';
+import personalInfoData from 'src/assets/data/personalInfo.json';
 
 @Component({
   selector: 'app-projects',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-
+  @Input() projects: Projects[] = personalInfoData.Projects;
 }

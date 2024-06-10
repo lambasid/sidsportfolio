@@ -4,7 +4,40 @@
         "studentId": "991670020",
         "email": "lambasid@sheridancollege.ca",
         "linkedin": "https://www.linkedin.com/in/lamba-works/"
-    }
+    },
 
+    "Projects": [
+        {
+            "projectID": 1,
+            "Name": "GamesHub",
+            "Description": "A versatile collection of online games accessible on web, Android, and iOS platforms, providing seamless and responsive gameplay suitable for all ages.",
+            "Technologies":
+                "ReactJS|Tailwind CSS"
+            ,
+            "Duration": "February 2024 - April 2024"
+        },
+        {   
+            "projectID": 2,
+            "Name": "Hackville 2024 - Community",
+            "Description": 
+                "Led front-end development of a speed dating app for college students, featuring secure login and speed friending.Integrated interactive community features to boost campus engagement."
+            ,
+            "Technologies":
+                "ReactJS|HTML|CSS|Figma"
+            ,
+            "Duration": "January 2024"
+        },
+        {   
+            "projectID": 3,
+            "Name": "Book-World",
+            "Description":
+                "Developed a secure, robust Spring Boot-based bookstore app with complex database operations and interactive Thymeleaf interfaces. Implemented Spring Security for user authentication and role management, enhancing data protection and access control."
+            ,
+            "Technologies":
+                "SpringBoot|Enterprise Java|Restful APIs"
+            ,
+            "Duration": "December 2023"
+        }
+    ]
 
 }

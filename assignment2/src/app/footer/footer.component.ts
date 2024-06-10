@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+import {Personal} from '../interfacePersonalInfo';
+import personalInfoData from 'src/assets/data/personalInfo.json';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent {
-
+  @Input() personal: Personal = personalInfoData.PersonalInfo;
 }

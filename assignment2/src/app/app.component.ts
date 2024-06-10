@@ -1,5 +1,5 @@
 import { Component,Input } from '@angular/core';
-import {Personal} from './interfacePersonalInfo';
+import {Personal,Projects} from './interfacePersonalInfo';
 import personalInfoData from '../assets/data/personalInfo.json';
 
 @Component({
@@ -9,5 +9,6 @@ import personalInfoData from '../assets/data/personalInfo.json';
 })
 export class AppComponent {
   title = 'assignment2';
-  personal: Personal = personalInfoData.PersonalInfo;
+  @Input() p: Personal = personalInfoData.PersonalInfo;
+  @Input() projects: Projects[] = personalInfoData.Projects;
 }
