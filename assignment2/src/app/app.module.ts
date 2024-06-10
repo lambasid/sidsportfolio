@@ -10,10 +10,13 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {FormsModule} from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { AboutComponent } from './about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './navigationbarcomponent/about/about.component';
+import { ProjectsComponent } from './navigationbarcomponent/projects/projects.component';
+import { ContactComponent } from './navigationbarcomponent/contact/contact.component';
 import { NavigationbarcomponentComponent } from './navigationbarcomponent/navigationbarcomponent.component';
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,7 @@ import { NavigationbarcomponentComponent } from './navigationbarcomponent/naviga
     AboutComponent,
     ProjectsComponent,
     ContactComponent,
-    NavigationbarcomponentComponent
+    NavigationbarcomponentComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,9 +34,14 @@ import { NavigationbarcomponentComponent } from './navigationbarcomponent/naviga
     BrowserAnimationsModule,
     MaterialModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faLinkedin, faGithub);
+ }
+}

@@ -1,3 +1,13 @@
-<app-header [personal] = 'p'></app-header>
-<app-navigationbarcomponent></app-navigationbarcomponent>
-<app-footer></app-footer>
+<app-header [personal]='p'></app-header> <app-navigationbarcomponent></app-navigationbarcomponent>
+
+
+
+<div>
+    <mat-checkbox [(ngModel)]="themeCheck" disabled="false" checked="true">Select theme!</mat-checkbox>
+  </div>
+  <div *ngIf="themeCheck">
+    The theme is dark.
+  </div>
+
+  <app-footer></app-footer>
+  

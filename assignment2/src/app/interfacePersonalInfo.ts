@@ -3,6 +3,8 @@ export interface Personal {
   name: string;
   studentId: string;
   email: string;
+  linkedin: string;
+  github: string;
 }
 
 export interface Projects {
@@ -12,3 +14,4 @@ export interface Projects {
   Technologies: string;
   Duration: string;
 }
+

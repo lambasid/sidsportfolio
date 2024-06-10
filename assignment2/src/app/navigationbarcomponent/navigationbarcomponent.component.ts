@@ -9,5 +9,5 @@ import personalInfoData from 'src/assets/data/personalInfo.json';
 })
 export class NavigationbarcomponentComponent {
   @Input() p: Personal = personalInfoData.PersonalInfo;
-  //@Input() proj: Projects[] = personalInfoData.Projects;
+  @Input() projects: Projects[] = personalInfoData.Projects;
 }

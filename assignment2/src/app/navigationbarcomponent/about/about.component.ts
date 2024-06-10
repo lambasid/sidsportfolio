@@ -1,5 +1,5 @@
 import { Component,Input } from '@angular/core';
-import {Personal} from '../interfacePersonalInfo';
+import {Personal} from '../../interfacePersonalInfo';
 import personalInfoData from 'src/assets/data/personalInfo.json';
 
 @Component({
