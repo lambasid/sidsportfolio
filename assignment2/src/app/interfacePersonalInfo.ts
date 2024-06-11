@@ -5,6 +5,7 @@ export interface Personal {
   email: string;
   linkedin: string;
   github: string;
+  about: string[];
 }
 
 export interface Projects {

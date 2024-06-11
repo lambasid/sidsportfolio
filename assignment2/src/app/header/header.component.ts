@@ -9,4 +9,5 @@ import personalInfoData from 'src/assets/data/personalInfo.json';
 })
 export class HeaderComponent {
   @Input() personal: Personal = personalInfoData.PersonalInfo;
+  @Input() themeCheck!:boolean;
 }

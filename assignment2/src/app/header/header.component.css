@@ -1,7 +1,7 @@
 /* Header styling */
 
 header {
-    background-color: #f7f7f7; /* light gray background */
+    background-color: #ffffff; /* light gray background */
     padding: 20px; /* add some padding to create space */
     text-align: center; /* center the content */
     border-bottom: 1px solid #ddd; /* add a subtle border */
@@ -10,6 +10,16 @@ header {
     align-items: center; /* center the content vertically */
   }
   
+  #darkModeCheckbox:checked ~ header {
+    background-color: #888; /* light gray background */
+    padding: 20px; /* add some padding to create space */
+    text-align: center; /* center the content */
+    border-bottom: 1px solid #ddd; /* add a subtle border */
+    display: flex; /* use flexbox to center the content vertically */
+    justify-content: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+  }
+
   .header-content {
     max-width: 800px; /* set a maximum width for the content */
     margin: 0 auto; /* center the content horizontally */

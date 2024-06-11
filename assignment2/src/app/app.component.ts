@@ -15,6 +15,5 @@ export class AppComponent {
 
   //for theme checkbox
   themeCheck = false;
-  currentTheme: string = "Dark";
 
 }
