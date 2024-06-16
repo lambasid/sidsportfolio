@@ -1,36 +1,33 @@
-<mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4" [ngStyle]="{textAlign: 'center'}">
-    <mat-tab>
-        <ng-template mat-tab-label>
-            <span class="material-icons">home</span>
-            Home
-        </ng-template>
-    </mat-tab>
-
-    <mat-tab href="#Projects">
-
-        <ng-template mat-tab-label>
-
-            <span class="material-icons">link</span>
-            <a href="#Projects">Projects</a>
-
-
-        </ng-template>
-
-    </mat-tab>
-
-    <mat-tab>
-        <ng-template mat-tab-label id="contact">
-            <span class="material-icons">mail</span>
-            <a href="#Contact">Contact</a>
-        </ng-template>
-    </mat-tab>
-
-    <mat-tab>
-        <ng-template mat-tab-label id="about">
-            <span class="material-icons">info</span>
-            <a href="#About">About</a>
-
-        </ng-template>
-    </mat-tab>
-
-</mat-tab-group>
+<div class="sidebar-container">
+    <div class="sidebar">
+        <!-- Image container with a class for styling -->
+        <div class="image-container ">
+            <img class="object-contain object-centre w-48 h-48" src="assets/images/sid.png">
+        </div>
+        <mat-nav-list>
+            <a routerLink="/">
+                <mat-list-item>
+                    <span>About</span>
+                </mat-list-item>
+            </a>
+            <a routerLink="/projects">
+                <mat-list-item>
+                    <span>Projects</span>
+                </mat-list-item>
+            </a>
+            <a routerLink="/resume">
+                <mat-list-item>
+                    <span>Resume</span>
+                </mat-list-item>
+            </a>
+            <a routerLink="/contact">
+                <mat-list-item>
+                    <span>Contact</span>
+                </mat-list-item>
+            </a>
+        </mat-nav-list>
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div>
