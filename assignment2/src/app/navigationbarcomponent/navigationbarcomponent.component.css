@@ -3,15 +3,18 @@
   }
   
   .sidebar {
-    width: 200px;
-    background-color: green;
+    width: 250px;
+    background-color: #1A4D2E;
     color: #b0b3b8;
-    height: 100vh;
-    padding-top: 20px;
+    height: 100lvh;
+    padding-top: 29px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
   }
   
   .sidebar mat-nav-list {
-    padding: 0;
+    padding: 2px 0px 10px;
   }
   
   .sidebar mat-list-item {
@@ -20,11 +23,11 @@
   }
   
   .sidebar mat-list-item:hover {
-    background-color: blue;
+    background-color: #4F6F52;
   }
   
   .sidebar mat-list-item span {
-    font-size: 16px;
+    font-size: 19px;
   }
   
   .content {

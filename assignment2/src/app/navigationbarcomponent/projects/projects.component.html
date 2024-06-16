@@ -1,10 +1,12 @@
-<mat-list>
-  <mat-list-item *ngFor="let x of projects">
-    <div>
-      <h4 matListItemTitle>{{x.Name}}</h4>
-      <p matListItemLine>{{ x.Description }}</p>
-      <p matListItemLine>{{ x.Technologies }}</p>
-      <p matListItemLine>{{ x.Duration }}</p>
-    </div>
-  </mat-list-item>
-</mat-list>
+<div class="flex justify-center items-top h-96 right-auto">
+  <mat-list class="">
+    <mat-list-item *ngFor="let x of projects" class="py-4">
+      <div class="text-center right-96">
+        <h4 matListItemTitle class="font-bold text-6xl">{{x.Name}}</h4>
+        <p matListItemLine class="text-gray-600">{{ x.Description }}</p>
+        <p matListItemLine class="text-gray-600">{{ x.Technologies }}</p>
+        <p matListItemLine class="text-gray-600">{{ x.Duration }}</p>
+      </div>
+    </mat-list-item>
+  </mat-list>
+</div>
