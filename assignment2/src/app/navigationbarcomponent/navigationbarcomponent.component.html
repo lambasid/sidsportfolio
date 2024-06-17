@@ -1,33 +1,46 @@
-<div class="sidebar-container">
-    <div class="sidebar">
+<div class="flex h-screen">
+    <div class="sidebar-container flex flex-col justify-between w-64 p-6 bg-gray-800 text-white">
+      <div>
         <!-- Image container with a class for styling -->
-        <div class="overflow-visible">
-            <img class=" rounded-full grayscale object-fill object-centre " src="assets/images/sid.png">
+        <div class="overflow-visible mb-8">
+          <a href="https://www.instagram.com/damn_sid_/" target="_blank">
+            <img class="rounded-full grayscale object-cover w-40 h-40 mx-auto" src="assets/images/sid.png" alt="Profile Picture">
+          </a>
         </div>
-        <mat-nav-list>
-            <a routerLink="/">
-                <mat-list-item>
-                    <span>About</span>
-                </mat-list-item>
-            </a>
-            <a routerLink="/projects">
-                <mat-list-item>
-                    <span>Projects</span>
-                </mat-list-item>
-            </a>
-            <a routerLink="/resume">
-                <mat-list-item>
-                    <span>Resume</span>
-                </mat-list-item>
-            </a>
-            <a routerLink="/contact">
-                <mat-list-item>
-                    <span>Contact</span>
-                </mat-list-item>
-            </a>
+        <mat-nav-list class="space-y-6">
+          <a routerLink="/" class="block text-center">
+            <mat-list-item class="text-white">
+              <span class="text-white">About</span>
+            </mat-list-item>
+          </a>
+          <a routerLink="/projects" class="block text-center">
+            <mat-list-item class="text-white">
+              <span class="text-white">Projects</span>
+            </mat-list-item>
+          </a>
+          <a routerLink="/resume" class="block text-center">
+            <mat-list-item class="text-white">
+              <span class="text-white">Resume</span>
+            </mat-list-item>
+          </a>
+          <a routerLink="/contact" class="block text-center">
+            <mat-list-item class="text-white">
+              <span class="text-white">Contact</span>
+            </mat-list-item>
+          </a>
         </mat-nav-list>
+      </div>
+      <div class="social-icons flex justify-center space-x-4 mt-8">
+        <a href="https://www.linkedin.com/in/lamba-works/" target="_blank" aria-label="LinkedIn">
+          <fa-icon [icon]="['fab', 'linkedin']" size="2x"></fa-icon>
+        </a>
+        <a href="https://github.com/lambasid" target="_blank" aria-label="GitHub">
+          <fa-icon [icon]="['fab', 'github']" size="2x"></fa-icon>
+        </a>
+      </div>
     </div>
-    <div>
-        <router-outlet></router-outlet>
+    <div class="flex-grow">
+      <router-outlet></router-outlet>
     </div>
-</div>
+  </div>
+  
