@@ -46,4 +46,5 @@ export class AppModule {
   constructor(library: FaIconLibrary) {
     library.addIcons(faLinkedin, faGithub);
  }
+ 
 }
