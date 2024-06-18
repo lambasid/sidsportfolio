@@ -1,12 +1,39 @@
-<div id="Contact">
-
-  <div class="social-icons absolute top-44 left-80 right-auto">
-    <a href="{{personal.linkedin}}" target="_blank" aria-label="LinkedIn">
-      <i class="fab fa-linkedin"></i><fa-icon [icon]="['fab', 'linkedin']" size="8x"></fa-icon>
+<div id="Contact" class="p-6 bg-gray-100 flex flex-col items-center space-y-8">
+  <!-- Social Icons -->
+  <div class="social-icons flex space-x-6">
+    <a href="{{personal.linkedin}}" target="_blank" aria-label="LinkedIn" class="text-gray-800 hover:text-blue-600">
+      <fa-icon [icon]="['fab', 'linkedin']" size="3x"></fa-icon>
     </a>
-    <a href="{{personal.github}}" target="_blank" aria-label="GitHub">
-      <i class="fab fa-github"></i><fa-icon [icon]="['fab', 'github']" size="8x"></fa-icon>
+    <a href="{{personal.github}}" target="_blank" aria-label="GitHub" class="text-gray-800 hover:text-black">
+      <fa-icon [icon]="['fab', 'github']" size="3x"></fa-icon>
     </a>
   </div>
 
+  <!-- Contact Form -->
+  <form class="w-full max-w-lg bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-2xl font-bold mb-6 text-center">Contact Me</h2>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your name">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your email">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+      <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="5" placeholder="Your message"></textarea>
+    </div>
+    <div class="flex items-center justify-between">
+      <button class="bg-gray-800 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        Send Message
+      </button>
+    </div>
+  </form>
+
+  <!-- Email Link -->
+  <div class="text-center">
+    <p class="text-gray-700">Or reach out directly via email:</p>
+    <a href="mailto:lambasid@sheridancollege.ca" class="text-gray-800 hover:underline hover:text-gray-500">lambasid@sheridancollege.ca</a>
+  </div>
 </div>

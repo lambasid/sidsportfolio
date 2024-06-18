@@ -1,46 +1,37 @@
-<div class="flex h-screen">
-    <div class="sidebar-container flex flex-col justify-between w-64 p-6 bg-gray-800 text-white">
-      <div>
-        <!-- Image container with a class for styling -->
-        <div class="overflow-visible mb-8">
-          <a href="https://www.instagram.com/damn_sid_/" target="_blank">
-            <img class="rounded-full grayscale object-cover w-40 h-40 mx-auto" src="assets/images/sid.png" alt="Profile Picture">
-          </a>
-        </div>
-        <mat-nav-list class="space-y-6">
-          <a routerLink="/" class="block text-center">
-            <mat-list-item class="text-white">
-              <span class="text-white">About</span>
-            </mat-list-item>
-          </a>
-          <a routerLink="/projects" class="block text-center">
-            <mat-list-item class="text-white">
-              <span class="text-white">Projects</span>
-            </mat-list-item>
-          </a>
-          <a routerLink="/resume" class="block text-center">
-            <mat-list-item class="text-white">
-              <span class="text-white">Resume</span>
-            </mat-list-item>
-          </a>
-          <a routerLink="/contact" class="block text-center">
-            <mat-list-item class="text-white">
-              <span class="text-white">Contact</span>
-            </mat-list-item>
-          </a>
-        </mat-nav-list>
-      </div>
-      <div class="social-icons flex justify-center space-x-4 mt-8">
-        <a href="https://www.linkedin.com/in/lamba-works/" target="_blank" aria-label="LinkedIn">
-          <fa-icon [icon]="['fab', 'linkedin']" size="2x"></fa-icon>
-        </a>
-        <a href="https://github.com/lambasid" target="_blank" aria-label="GitHub">
-          <fa-icon [icon]="['fab', 'github']" size="2x"></fa-icon>
+<div class="flex h-screen overflow-hidden">
+  <div class="sidebar-container flex flex-col justify-between w-64 p-6 bg-gray-800 text-white fixed h-full">
+    <div>
+      <!-- Image container with a class for styling -->
+      <div class="overflow-visible mb-8">
+        <a href="https://www.instagram.com/damn_sid_/" target="_blank">
+          <img class="rounded-full grayscale object-cover w-40 h-40 mx-auto" src="assets/images/sid.png" alt="Profile Picture">
         </a>
       </div>
+      <nav class="space-y-6">
+        <a routerLink="/" class="block text-center">
+          <span class="text-white">About</span>
+        </a>
+        <a routerLink="/projects" class="block text-center">
+          <span class="text-white">Projects</span>
+        </a>
+        <a routerLink="/resume" class="block text-center">
+          <span class="text-white">Resume</span>
+        </a>
+        <a routerLink="/contact" class="block text-center">
+          <span class="text-white">Contact</span>
+        </a>
+      </nav>
     </div>
-    <div class="flex-grow">
-      <router-outlet></router-outlet>
+    <div class="social-icons flex justify-center space-x-4 mt-8">
+      <a href="https://www.linkedin.com/in/lamba-works/" target="_blank" aria-label="LinkedIn">
+        <fa-icon [icon]="['fab', 'linkedin']" size="2x"></fa-icon>
+      </a>
+      <a href="https://github.com/lambasid" target="_blank" aria-label="GitHub">
+        <fa-icon [icon]="['fab', 'github']" size="2x"></fa-icon>
+      </a>
     </div>
   </div>
-  
+  <div class="flex-grow ml-64 overflow-auto p-6">
+    <router-outlet></router-outlet>
+  </div>
+</div>
