@@ -1,71 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Sidebar</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body>
-  <div class="flex h-screen overflow-hidden">
-    <!-- Sidebar -->
-    <div
-      id="sidebar"
-      class="sidebar-container flex flex-col justify-between w-64 p-6 bg-gray-800 text-white fixed h-full transition-transform transform -translate-x-full md:translate-x-0 md:relative z-20"
-    >
-      <div>
-        <!-- Image container with a class for styling -->
-        <div class="overflow-visible mb-8">
-          <a href="https://www.instagram.com/damn_sid_/" target="_blank">
-            <img
-              class="rounded-full grayscale object-cover w-40 h-40 mx-auto"
-              src="assets/images/sid.png"
-              alt="Profile Picture"
-            />
-          </a>
-        </div>
-        <nav class="space-y-6">
-          <a routerLink="/" class="block text-center">
-            <span class="text-white">About</span>
-          </a>
-          <a routerLink="/projects" class="block text-center">
-            <span class="text-white">Projects</span>
-          </a>
-          <a routerLink="/resume" class="block text-center">
-            <span class="text-white">Resume</span>
-          </a>
-          <a routerLink="/contact" class="block text-center">
-            <span class="text-white">Contact</span>
-          </a>
-        </nav>
-      </div>
-      <div class="social-icons flex justify-center space-x-4 mt-8">
-        <a href="https://www.linkedin.com/in/lamba-works/" target="_blank" aria-label="LinkedIn">
-          <fa-icon [icon]="['fab', 'linkedin']" size="2x"></fa-icon>
-        </a>
-        <a href="https://github.com/lambasid" target="_blank" aria-label="GitHub">
-          <fa-icon [icon]="['fab', 'github']" size="2x"></fa-icon>
+<div class="flex h-screen overflow-hidden">
+  <div class="sidebar-container flex flex-col justify-between w-64 p-6 bg-gray-800 text-white fixed h-full">
+    <div>
+      <!-- Image container with a class for styling -->
+      <div class="overflow-visible mb-8">
+        <a href="https://www.instagram.com/damn_sid_/" target="_blank">
+          <img class="rounded-full grayscale object-cover w-40 h-40 mx-auto" src="assets/images/sid.png" alt="Profile Picture">
         </a>
       </div>
+      <nav class="space-y-6">
+        <a routerLink="/" class="block text-center">
+          <span class="text-white">About</span>
+        </a>
+        <a routerLink="/projects" class="block text-center">
+          <span class="text-white">Projects</span>
+        </a>
+        <a routerLink="/resume" class="block text-center">
+          <span class="text-white">Resume</span>
+        </a>
+        <a routerLink="/contact" class="block text-center">
+          <span class="text-white">Contact</span>
+        </a>
+      </nav>
     </div>
-    <!-- Main Content -->
-    <div class="flex-grow md:ml-64 overflow-auto p-6">
-      <button
-        id="menu-toggle"
-        class="md:hidden p-2 rounded bg-gray-800 text-white mb-4 focus:outline-none"
-        onclick="toggleSidebar()"
-      >
-        ☰ Menu
-      </button>
-      <router-outlet></router-outlet>
+    <div class="social-icons flex justify-center space-x-4 mt-8">
+      <a href="https://www.linkedin.com/in/lamba-works/" target="_blank" aria-label="LinkedIn">
+        <fa-icon [icon]="['fab', 'linkedin']" size="2x"></fa-icon>
+      </a>
+      <a href="https://github.com/lambasid" target="_blank" aria-label="GitHub">
+        <fa-icon [icon]="['fab', 'github']" size="2x"></fa-icon>
+      </a>
     </div>
   </div>
-
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      sidebar.classList.toggle('-translate-x-full');
-    }
-  </script>
-</body>
-</html>
+  <div class="flex-grow ml-64 overflow-auto p-6">
+    <router-outlet></router-outlet>
+  </div>
+</div>
