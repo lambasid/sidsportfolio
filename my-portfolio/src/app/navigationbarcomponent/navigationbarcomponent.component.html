@@ -1,10 +1,18 @@
 <div class="flex h-screen overflow-hidden">
-  <div class="sidebar-container flex flex-col justify-between w-64 p-6 bg-gray-800 text-white fixed h-full">
+  <!-- Sidebar -->
+  <div
+    id="sidebar"
+    class="sidebar-container flex flex-col justify-between w-64 p-6 bg-gray-800 text-white fixed h-full transition-transform transform -translate-x-full md:translate-x-0 md:relative z-20"
+  >
     <div>
       <!-- Image container with a class for styling -->
       <div class="overflow-visible mb-8">
         <a href="https://www.instagram.com/damn_sid_/" target="_blank">
-          <img class="rounded-full grayscale object-cover w-40 h-40 mx-auto" src="assets/images/sid.png" alt="Profile Picture">
+          <img
+            class="rounded-full grayscale object-cover w-40 h-40 mx-auto"
+            src="assets/images/sid.png"
+            alt="Profile Picture"
+          />
         </a>
       </div>
       <nav class="space-y-6">
@@ -31,7 +39,22 @@
       </a>
     </div>
   </div>
-  <div class="flex-grow ml-64 overflow-auto p-6">
+  <!-- Main Content -->
+  <div class="flex-grow md:ml-64 overflow-auto p-6">
+    <button
+      id="menu-toggle"
+      class="md:hidden p-2 rounded bg-gray-800 text-white mb-4 focus:outline-none"
+      onclick="toggleSidebar()"
+    >
+      ☰ Menu
+    </button>
     <router-outlet></router-outlet>
   </div>
 </div>
+
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('-translate-x-full');
+  }
+</script>
