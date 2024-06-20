@@ -17,6 +17,7 @@ import { NavigationbarcomponentComponent } from './navigationbarcomponent/naviga
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { ResumeComponent } from './resume/resume.component';
+import { ThemeComponent } from './theme/theme.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { ResumeComponent } from './resume/resume.component';
     ContactComponent,
     NavigationbarcomponentComponent,
     ResumeComponent,
+    ThemeComponent,
   ],
   imports: [
     BrowserModule,
