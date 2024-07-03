@@ -1,5 +1,7 @@
-<app-navigationbarcomponent></app-navigationbarcomponent>
-<app-footer></app-footer>
+<!-- app.component.html -->
+ 
+<app-navigationbarcomponent [navContent]="content" [navProjects]="projects" ></app-navigationbarcomponent>
+<app-footer [navContent]="content"></app-footer>
 
 <!-- ng build --output-path cpanel --base-href
 https://lambasid.dev.fast.sheridanc.on.ca/porfolio-June-2024 -->

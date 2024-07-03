@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-import {Personal} from '../../interfacePersonalInfo';
-import personalInfoData from 'src/assets/data/personalInfo.json';
+import {Personal} from '../../interfaceContent';
 
 @Component({
   selector: 'app-contact',
@@ -9,6 +8,5 @@ import personalInfoData from 'src/assets/data/personalInfo.json';
 })
 export class ContactComponent {
 
-  @Input() personal: Personal = personalInfoData.PersonalInfo;
-
+  @Input() navContent!: Personal;
 }

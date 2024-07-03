@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Projects } from '../../interfacePersonalInfo';
-import personalInfoData from 'src/assets/data/personalInfo.json';
+import { Projects } from '../../interfaceProjects';
 
 @Component({
   selector: 'app-projects',
@@ -8,5 +7,5 @@ import personalInfoData from 'src/assets/data/personalInfo.json';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-  @Input() projects: Projects[] = personalInfoData.Projects;
+  @Input() navProjects !: Projects[];
 }

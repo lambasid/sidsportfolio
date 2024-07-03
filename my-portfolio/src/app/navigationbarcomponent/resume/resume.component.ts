@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+import {Personal} from '../../interfaceContent';
 
 @Component({
   selector: 'app-resume',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./resume.component.css']
 })
 export class ResumeComponent {
+  @Input() navContent!: Personal;
 
 }

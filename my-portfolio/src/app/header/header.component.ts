@@ -1,6 +1,5 @@
 import { Component,Input } from '@angular/core';
-import {Personal} from '../interfacePersonalInfo';
-import personalInfoData from 'src/assets/data/personalInfo.json';
+import {Personal} from '../interfaceContent';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +7,6 @@ import personalInfoData from 'src/assets/data/personalInfo.json';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  @Input() personal: Personal = personalInfoData.PersonalInfo;
+  @Input() navContent!: Personal;
   @Input() themeCheck!:boolean;
 }

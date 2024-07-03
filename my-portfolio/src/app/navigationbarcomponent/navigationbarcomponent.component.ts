@@ -1,6 +1,7 @@
 import { Component,Input } from '@angular/core';
-import {Personal,Projects} from '../interfacePersonalInfo';
-import personalInfoData from 'src/assets/data/personalInfo.json';
+//import {Personal,Projects} from '../interfacePersonalInfo';
+import {Personal} from '../interfaceContent';
+import {Projects} from '../interfaceProjects';
 
 
 @Component({
@@ -9,6 +10,6 @@ import personalInfoData from 'src/assets/data/personalInfo.json';
   styleUrls: ['./navigationbarcomponent.component.css']
 })
 export class NavigationbarcomponentComponent {
-  @Input() p: Personal = personalInfoData.PersonalInfo;
-  @Input() projects: Projects[] = personalInfoData.Projects;
+  @Input() navContent!: Personal;
+  @Input() navProjects!: Projects[];
 }

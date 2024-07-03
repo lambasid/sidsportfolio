@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './navigationbarcomponent/about/about.component';
 import { ProjectsComponent } from './navigationbarcomponent/projects/projects.component';
-import { ResumeComponent } from './resume/resume.component';
+import { ResumeComponent } from './navigationbarcomponent/resume/resume.component';
 import { ContactComponent } from './navigationbarcomponent/contact/contact.component';
 
 const routes: Routes = [

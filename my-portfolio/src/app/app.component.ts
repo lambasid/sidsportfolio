@@ -1,6 +1,10 @@
 import { Component, Input } from '@angular/core';
-import { Personal, Projects } from './interfacePersonalInfo';
-import personalInfoData from '../assets/data/personalInfo.json';
+//import { Personal, Projects } from './interfacePersonalInfo';
+//import personalInfoData from '../assets/data/personalInfo.json';
+import {Personal} from './interfaceContent';
+import {Projects} from './interfaceProjects';
+import projectsData from '../assets/data/projects.json';
+import contentData from '../assets/data/content.json';
 
 
 @Component({
@@ -9,11 +13,9 @@ import personalInfoData from '../assets/data/personalInfo.json';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assignment2';
-  @Input() p: Personal = personalInfoData.PersonalInfo;
-  @Input() projects: Projects[] = personalInfoData.Projects;
+  title = 'assignment3';
+  @Input() content: Personal = contentData.PersonalInfo;
+  @Input() projects: Projects[] = projectsData.Projects;
 
-  //for theme checkbox
-  themeCheck = false;
 
 }
