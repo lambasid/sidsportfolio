@@ -1,0 +1,47 @@
+{
+    "Education": [
+        {
+            "title": "Computer Systems Technology - Information Systems Engineering | Advanced Diploma",
+            "date": "September 2022 - December 2025",
+            "institution": "Sheridan College(TRC)",
+            "gpa": "3.67/4.0"
+        }
+    ],
+    "Experience": [
+        {
+            "title": "Service Desk Representative",
+            "company": "Instant Imprints",
+            "date": "March 2024 - Present",
+            "location": "Oakville, ON",
+            "tasks": [
+                "Engaged with customers, created support tickets, and provided comprehensive assistance, enhancing overall customer satisfaction.",
+                "Explained business offerings and helped customers visualize and design their requests, ensuring clear understanding and successful outcomes.",
+                "Acquired basic graphic design skills to assist the team and independently managed client relations."
+            ]
+        },
+        {
+            "title": "Software Development Intern",
+            "company": "HustleBee Softwares Private Limited",
+            "date": "January 2024 - April 2024",
+            "location": "Remote",
+            "tasks": [
+                "Translated client needs into JIRA stories for devs.",
+                "Designed interactive UIs with HTML/CSS/JS/React, integrated with NodeJS/MongoDB.",
+                "Conducted code reviews and provided feedback to team members.",
+                "Troubleshooted and resolved production issues in a timely manner."
+            ]
+        },
+        {
+            "title": "App Promotion Specialist",
+            "company": "Boost Mobile Food Ordering",
+            "date": "November 2023 - December 2023",
+            "location": "Sheridan College(TRC)",
+            "tasks": [
+                "Enhanced app visibility through targeted marketing strategies at Sheridan College.",
+                "Boosted user engagement by analyzing and optimizing engagement metrics.",
+                "Collaborated with teams to refine promotional content and align with user preferences."
+            ]
+        }
+    ]
+   
+}

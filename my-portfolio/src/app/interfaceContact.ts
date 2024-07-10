@@ -8,4 +8,6 @@ export interface Personal {
     github: string;
     image:string;
     about: string;
+    skills: string[];
+    certifications: string[];
   }

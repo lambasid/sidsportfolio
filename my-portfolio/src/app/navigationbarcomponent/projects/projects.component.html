@@ -1,14 +1,24 @@
 <div class="flex justify-center items-start min-h-screen p-6 bg-gray-100">
   <div class="w-full max-w-4xl">
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">My Projects</h2>
-    <ul class="space-y-6">
-      <li *ngFor="let x of navProjects" class="bg-white shadow-md rounded-lg p-8">
-        <div class="text-center">
-          <h4 class="font-bold text-xl md:text-2xl text-gray-800 mb-3">{{ x.Name }}</h4>
-          <p class="text-gray-600 mb-3">{{ x.Description }}</p>
-          <p class="text-gray-600 mb-2"><strong>Technologies:</strong> {{ x.Technologies }}</p>
-          <p class="text-gray-600"><strong>Duration:</strong> {{ x.Duration }}</p>
-        </div>
+    <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-8">My Projects</h2>
+    <ul class="space-y-8">
+      <li *ngFor="let x of navProjects" class="transition-transform transform hover:-translate-y-1 hover:shadow-xl">
+        <a [href]="x.CodeLink" target="_blank" class="no-underline">
+          
+          <mat-card class="custom-mat-card">
+            <mat-card-header>
+              <div mat-card-avatar class="project-avatar"><fa-icon [icon]="faTerminal"></fa-icon></div>
+              <mat-card-title>{{ x.Name }} </mat-card-title> 
+              <mat-card-subtitle>{{ x.Technologies }} | Time: {{ x.Duration }}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <p>{{ x.Description }}</p>
+            </mat-card-content>
+            <mat-card-actions>
+               
+            </mat-card-actions>
+          </mat-card>
+        </a>
       </li>
     </ul>
   </div>

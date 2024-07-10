@@ -1,5 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { Projects } from '../../interfaceProjects';
+import projectsData from '../../../assets/data/projects.json';
+import contactData from '../../../assets/data/contact.json';
+import { faTerminal } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-projects',
@@ -7,5 +10,6 @@ import { Projects } from '../../interfaceProjects';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-  @Input() navProjects !: Projects[];
+  @Input() navProjects: Projects[] = projectsData.Projects;
+  faTerminal = faTerminal;
 }

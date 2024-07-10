@@ -15,8 +15,10 @@ import { ProjectsComponent } from './navigationbarcomponent/projects/projects.co
 import { ContactComponent } from './navigationbarcomponent/contact/contact.component';
 import { NavigationbarcomponentComponent } from './navigationbarcomponent/navigationbarcomponent.component';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 import { ResumeComponent } from './navigationbarcomponent/resume/resume.component';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
 
 
 @NgModule({
@@ -44,7 +46,7 @@ import { ResumeComponent } from './navigationbarcomponent/resume/resume.componen
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(faLinkedin, faGithub);
+    library.addIcons(faLinkedin, faGithub, faBars);
  }
  
 }

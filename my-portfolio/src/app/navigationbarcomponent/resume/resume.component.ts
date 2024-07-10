@@ -1,5 +1,5 @@
 import { Component,Input } from '@angular/core';
-import {Personal} from '../../interfaceContent';
+import {Personal} from '../../interfaceContact';
 
 @Component({
   selector: 'app-resume',

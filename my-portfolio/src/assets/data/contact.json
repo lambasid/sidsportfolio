@@ -1,0 +1,33 @@
+{
+    "PersonalInfo": {
+        "name": "Siddharth Lamba",
+        "role": "Information Systems Engineer",
+        "motto": "Turning Ideas into Impact with a Touch of Tech | Driving Innovation and Efficiency",
+        "studentId": "991670020",
+        "email": "lambasid@sheridancollege.ca",
+        "linkedin": "https://www.linkedin.com/in/lamba-works/",
+        "github": "https://github.com/lambasid",
+        "image": "/Users/siddharthlamba/git/sidsportfolio/my-portfolio/src/assets/images/sid.png",
+        "about": "Hello! I’m an Information Systems Engineering student at Sheridan College diving deep into the world of software development with a 3.67 GPA and a knack for turning complex problems into elegant digital solutions. I jazz up websites at Instant Imprints, where my strategies spiked sales by 25% overall. I crafted cool user-friendly interfaces at HustleBee Softwares. When I'm not coding, I'm leading the Swiftie Club at Sheridan College. Looking for an internship that will challenge me and sharpen my skills in Fall 2024!",
+        "skills": [
+            "Programming Languages: C#, JavaScript, PHP, HTML, CSS",
+            "Frameworks/Libraries: Java Spring Boot, Angular, Node.js, Tailwind, React JS, Express",
+            "Development Environments/IDEs: Visual Studio, Visual Studio Code, IntelliJ IDEA, Netbeans, Eclipse",
+            "Databases and Data Management: MySQL, SQL, Oracle Cloud DB, MongoDB, Azure",
+            "Networking and Tools: Wireshark, Cisco Packet Tracer",
+            "Collaboration and Project Management Tools: JIRA, Slack, GitHub, Discord",
+            "Soft Skills: Communication, Teamwork, Problem-Solving, Time Management",
+            "Operating Systems: Windows, Linux, MacOS",
+            "Cloud Platforms: AWS, Azure, Google Cloud Platform",
+            "Security: Ethical Hacking, Penetration Testing, Network Security"
+        ],
+        "certifications": [
+            "Certified Java Developer",
+            "Microsoft Certified: Azure Fundamentals",
+            "Cisco Certified: CCNA Routing and Switching",
+            "Oracle Certified: Java SE 8 Programmer I",
+            "Certified Ethical Hacker (CEH)",
+            "AWS Certified Cloud Practitioner"
+        ]
+    }
+}

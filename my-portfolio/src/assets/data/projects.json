@@ -4,30 +4,34 @@
             "projectID": 1,
             "Name": "Portfolio",
             "Description": "Explore my Angular-powered portfolio showcasing my story, resume, projects, and an easy way to connect with me.",
-            "Technologies": "Angular|Javascript|Angular Materials ",
-            "Duration": "May 2024 - July 2024"
+            "Technologies": "Angular | Javascript | Angular Materials",
+            "Duration": "25 days",
+            "CodeLink": "https://github.com/lambasid/sidsportfolio.git"
         },
         {
             "projectID": 2,
             "Name": "GamesHub",
             "Description": "A versatile collection of online games accessible on web, Android, and iOS platforms, providing seamless and responsive gameplay suitable for all ages.",
-            "Technologies": "ReactJS|Tailwind CSS",
-            "Duration": "February 2024 - April 2024"
+            "Technologies": "ReactJS | Tailwind CSS",
+            "Duration": "23 days",
+            "CodeLink": "https://github.com/lambasid/games-hub.git"
         },
         
         {
             "projectID": 3,
-            "Name": "Hackville 2024 - Community",
+            "Name": "Community(HackVille'24)",
             "Description": "Led front-end development of a speed dating app for college students, featuring secure login and speed friending.Integrated interactive community features to boost campus engagement.",
-            "Technologies": "ReactJS|HTML|CSS|Figma",
-            "Duration": "January 2024"
+            "Technologies": "ReactJS | HTML | CSS | Figma",
+            "Duration": "03 days",
+            "CodeLink": "https://www.figma.com/proto/dcswNO3TbQyrhBFejPMUTy/Hackville-2024---Community?page-id=0%3A1&type=design&node-id=30-831&viewport=396%2C-523%2C0.25&t=gluqeGZ4tOkF7nWo-1&scaling=scale-down&starting-point-node-id=30%3A1059&mode=design"
         },
         {
             "projectID": 4,
             "Name": "Book-World",
             "Description": "Developed a secure, robust Spring Boot-based bookstore app with complex database operations and interactive Thymeleaf interfaces. Implemented Spring Security for user authentication and role management, enhancing data protection and access control.",
-            "Technologies": "SpringBoot|Enterprise Java|Restful APIs",
-            "Duration": "December 2023"
+            "Technologies": "SpringBoot | Enterprise Java | Restful APIs",
+            "Duration": "08 days",
+            "CodeLink": "https://github.com/lambasid/bookworld.git"
         }
     ]
 }

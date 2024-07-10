@@ -4,4 +4,5 @@ export interface Projects {
     Description: string;
     Technologies: string;
     Duration: string;
+    CodeLink:string;
   }
