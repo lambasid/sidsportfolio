@@ -1,14 +1,14 @@
 <!-- Main container with flex layout -->
 <div class="flex h-screen">
   <!-- Toggle button visible on small screens, placed outside the sidebar for accessibility -->
-  <button class="fixed bottom-4 right-4 z-50 p-4 bg-gray-800 text-white rounded-full shadow-lg md:hidden" 
+  <button class="fixed bottom-4 right-4 z-50 p-4 bg-gray-800 text-white rounded-3xl shadow-lg md:hidden" 
         (click)="toggleSidebar()">
     <fa-icon [icon]="['fas', 'bars']" class="w-6 h-6"></fa-icon>
   </button>
 
   <!-- Sidebar container with dynamic class for showing/hiding on mobile -->
   <div [ngClass]="{'translate-x-0': isSidebarOpen, '-translate-x-full': !isSidebarOpen, 'transition-transform': true}"
-    class="sidebar-container fixed inset-y-0 left-0 z-40 w-64 p-6 bg-gray-800 text-white h-full transform flex flex-col justify-between md:relative md:translate-x-0 md:flex-none md:py-6 overflow-y-auto">
+    class="sidebar-container fixed inset-y-0 left-0 z-40 w-64 p-6 opacity-90 bg-gray-900 text-slate-100 h-full transform flex flex-col justify-between md:relative md:translate-x-0 md:flex-none md:py-6 overflow-y-auto">
     <div>
       <!-- Image container -->
       <div class="overflow-visible mb-8" (click)="toggleSidebar()">
@@ -19,17 +19,17 @@
       </div>
 
       <!-- Navigation links -->
-      <nav class="space-y-6">
-        <a href="#about" class="block text-center hover:bg-gray-600 rounded p-4" (click)="toggleSidebar()">
+      <nav class="space-y-9">
+        <a href="#about" class="block font-sans text-center hover:bg-gray-600 rounded p-6" (click)="toggleSidebar()">
           <span class="text-white">About</span>
         </a>
-        <a href="#projects" class="block text-center hover:bg-gray-600 rounded p-4" (click)="toggleSidebar()">
+        <a href="#projects" class="block font-sans text-center hover:bg-gray-600 rounded p-6" (click)="toggleSidebar()">
           <span class="text-white">Projects</span>
         </a>
-        <a href="#resume" class="block text-center hover:bg-gray-600 rounded p-4" (click)="toggleSidebar()">
+        <a href="#resume" class="block font-sans text-center hover:bg-gray-600 rounded p-6" (click)="toggleSidebar()">
           <span class="text-white">Resume</span>
         </a>
-        <a href="#contact" class="block text-center hover:bg-gray-600 rounded p-4" (click)="toggleSidebar()">
+        <a href="#contact" class="block font-sans text-center hover:bg-gray-600 rounded p-6" (click)="toggleSidebar()">
           <span class="text-white">Contact</span>
         </a>
       </nav>
@@ -51,22 +51,22 @@
       <!-- Main content area -->
       <main class="flex-grow">
         <!-- About Section -->
-        <section id="about" class="section  py-10 px-5 min-h-screen">
+        <section id="about" class="section  py-2 px-5 min-h-screen bg-slate-200">
           <app-about></app-about> <!-- Your AboutComponent embedded here -->
         </section>
     
         <!-- Projects Section -->
-        <section id="projects" class="section py-10 px-5 min-h-screen">
+        <section id="projects" class="section py-2 px-5 min-h-screen bg-slate-200">
           <app-projects></app-projects> <!-- Your ProjectsComponent embedded here -->
         </section>
     
         <!-- Resume Section -->
-        <section id="resume" class="section  py-10 px-5 min-h-screen">
+        <section id="resume" class="section  py-2 px-5 min-h-screen bg-slate-200">
           <app-resume></app-resume> <!-- Your ResumeComponent embedded here -->
         </section>
     
         <!-- Contact Section -->
-        <section id="contact" class="section py-10 px-5 min-h-screen">
+        <section id="contact" class="section py-1 px-5 min-h-screen bg-slate-200">
           <app-contact></app-contact> <!-- Your ContactComponent embedded here -->
         </section>
       </main>

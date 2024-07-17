@@ -1,22 +1,19 @@
 <div class="flex justify-center items-start min-h-screen p-6">
   <div class="w-full max-w-4xl">
-    <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-8">My Projects</h2>
+    <h2 class="text-5xl font-extrabold text-center text-gray-800 mb-8">My Projects</h2>
     <ul class="space-y-8">
-      <li *ngFor="let x of navProjects" class="transition-transform transform hover:-translate-y-1 hover:shadow-xl">
+      <li *ngFor="let x of navProjects" class="transition-transform transform hover:-translate-y-3 hover:shadow-2xl">
         <a [href]="x.CodeLink" target="_blank" class="no-underline">
-          
-          <mat-card class="custom-mat-card">
+          <!-- Apply Tailwind classes for custom styling -->
+          <mat-card class=" text-gray-800 p-4 rounded-lg shadow-md">
             <mat-card-header>
               <div mat-card-avatar class="project-avatar"><fa-icon [icon]="faTerminal"></fa-icon></div>
-              <mat-card-title>{{ x.Name }} </mat-card-title> 
+              <mat-card-title>{{ x.Name }}</mat-card-title>
               <mat-card-subtitle>{{ x.Technologies }} | Time: {{ x.Duration }}</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
               <p>{{ x.Description }}</p>
             </mat-card-content>
-            <mat-card-actions>
-               
-            </mat-card-actions>
           </mat-card>
         </a>
       </li>
