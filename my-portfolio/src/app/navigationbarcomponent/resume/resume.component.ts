@@ -1,5 +1,7 @@
 import { Component,Input } from '@angular/core';
 import {Personal} from '../../interfaceContact';
+import resumeData from 'src/assets/data/resume.json';
+import {Education, Experience} from '../../interfaceResume';
 
 @Component({
   selector: 'app-resume',
@@ -8,5 +10,6 @@ import {Personal} from '../../interfaceContact';
 })
 export class ResumeComponent {
   @Input() navContent!: Personal;
-
+  @Input() education: Education[] = resumeData.Education;
+  @Input() experience: Experience[] = resumeData.Experience;
 }
