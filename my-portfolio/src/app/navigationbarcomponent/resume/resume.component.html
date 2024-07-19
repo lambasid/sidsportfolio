@@ -1,13 +1,13 @@
-<section class="max-w-4xl mx-auto p-5">
+<section class="max-w-4xl mx-auto p-8">
   <!-- Education Section -->
-  <div class="mb-10">
-    <h1 class="text-3xl font-bold text-center mb-6">Education</h1>
-    <div class="border-l-4 border-gray-800">
+  <div class="mb-12">
+    <h1 class="text-4xl font-extrabold text-center mb-8 text-gray-900">Education</h1>
+    <div class="border-l-4 border-blue-500 pl-6">
       <ul>
-        <li class="mb-8 ml-4 pl-4" *ngFor="let edu of education">
-          <h3 class="text-xl font-semibold mb-1">{{ edu.title }}</h3>
-          <p class="text-gray-700 text-lg">{{ edu.date }}, {{ edu.institution }}</p>
-          <h5 class="text-gray-600">GPA: {{ edu.gpa }}</h5>
+        <li class="mb-10" *ngFor="let edu of education">
+          <h3 class="text-2xl font-semibold mb-2 text-blue-600">{{ edu.title }}</h3>
+          <p class="text-lg text-gray-800">{{ edu.date }}, {{ edu.institution }}</p>
+          <h5 class="text-lg text-gray-700">GPA: {{ edu.gpa }}</h5>
         </li>
       </ul>
     </div>
@@ -15,14 +15,14 @@
 
   <!-- Experience Section -->
   <div>
-    <h1 class="text-3xl font-bold text-center mb-6">Experience</h1>
-    <div class="border-l-4 border-gray-800">
+    <h1 class="text-4xl font-extrabold text-center mb-8 text-gray-900">Experience</h1>
+    <div class="border-l-4 border-blue-500 pl-6">
       <ul>
-        <li class="mb-8 ml-4 pl-4" *ngFor="let exp of experience">
-          <h3 class="text-xl font-semibold mb-1">{{ exp.title }} | {{ exp.company }}</h3>
-          <p class="text-gray-700 text-lg">{{ exp.date }}, {{ exp.location }}</p>
-          <ul class="list-disc pl-6 text-gray-700">
-            <li *ngFor="let task of exp.tasks">{{ task }}</li>
+        <li class="mb-10" *ngFor="let exp of experience">
+          <h3 class="text-2xl font-semibold mb-2 text-blue-600">{{ exp.title }} | {{ exp.company }}</h3>
+          <p class="text-lg text-gray-800">{{ exp.date }}, {{ exp.location }}</p>
+          <ul class="list-disc pl-8 text-lg text-gray-800">
+            <li class="mb-1" *ngFor="let task of exp.tasks">{{ task }}</li>
           </ul>
         </li>
       </ul>

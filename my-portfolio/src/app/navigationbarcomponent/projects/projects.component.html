@@ -5,14 +5,14 @@
       <li *ngFor="let x of navProjects" class="transition-transform transform hover:-translate-y-3 hover:shadow-2xl">
         <a [href]="x.CodeLink" target="_blank" class="no-underline">
           <!-- Apply Tailwind classes for custom styling -->
-          <mat-card class=" text-gray-800 p-4 rounded-lg shadow-md">
+          <mat-card class="p-4 rounded-lg shadow-md">
             <mat-card-header>
               <div mat-card-avatar class="project-avatar"><fa-icon [icon]="faTerminal"></fa-icon></div>
-              <mat-card-title>{{ x.Name }}</mat-card-title>
-              <mat-card-subtitle>{{ x.Technologies }} | Time: {{ x.Duration }}</mat-card-subtitle>
+              <mat-card-title class="text-blue-600">{{ x.Name }}</mat-card-title>
+              <mat-card-subtitle class="text-black">{{ x.Technologies }} | Time: {{ x.Duration }}</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
-              <p>{{ x.Description }}</p>
+              <p class="text-black">{{ x.Description }}</p>
             </mat-card-content>
           </mat-card>
         </a>

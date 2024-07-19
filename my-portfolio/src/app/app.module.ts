@@ -19,8 +19,12 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 import { ResumeComponent } from './navigationbarcomponent/resume/resume.component';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-
+import { 
+  faJs, faHtml5, faCss3Alt, faAngular, faReact, 
+  faNodeJs, faPython, faJava, faPhp, faSwift 
+} from '@fortawesome/free-brands-svg-icons';
 
 @NgModule({
   declarations: [
@@ -47,7 +51,9 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 })
 export class AppModule {
   constructor(library: FaIconLibrary) {
-    library.addIcons(faLinkedin, faGithub, faBars);
+    library.addIcons(faLinkedin, faGithub, faBars, faEnvelope,
+      faJs, faHtml5, faCss3Alt, faAngular, faReact,
+      faNodeJs, faPython, faJava, faPhp, faSwift);
  }
  
 }
